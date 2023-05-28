@@ -1,10 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
+import { Paragraph, ContainerMessage} from "./Notification.styled";
 
 const Notification = ({ message }) => (
-  <div>
-    <p>{message}</p>
-  </div>
+  <ContainerMessage>
+    <Paragraph>{message}</Paragraph>
+  </ContainerMessage>
 );
 
 Notification.propTypes = {
